@@ -1,27 +1,16 @@
 /*
+window.addEventListener('DOMContentLoaded', (event) => {
+    var browserLang = navigator.language;
+    var elementFR = document.getElementById("elFR");
+    var elementEN = document.getElementById("elEN");
 
-$(document).ready(function(){
-    $(".name").hover(
-        function(){$('.hidden_name').fadeIn(100);},
-        function(){$('.hidden_name').fadeOut(100);}
-    );
-
-    
-    var col = "#613dc1"
-
-    $(".work").hover(
-        function(){$('.work').css("color", col);},
-        function(){$('.work').css("color", "inherit");}
-    );
-    $(".exp").hover(
-        function(){$('.exp').css("color", col);},
-        function(){$('.exp').css("color", "inherit");}
-    );
-    $(".about").hover(
-        function(){$('.about').css("color", col);},
-        function(){$('.about').css("color", "inherit");}
-    );
-    
+    if(browserLang=="fr-FR"){
+        elementFR.style.display = "initial";
+        elementEN.style.display = "none";
+    }
+    else{
+        elementFR.style.display = "none";
+        elementEN.style.display = "initial";
+    }
 });
-
 */
