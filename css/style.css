@@ -92,7 +92,7 @@ p>a:hover{
 
 /* <hr> */
 
-.bar{
+.line{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -136,9 +136,34 @@ section>.image_test{
 
 /* Media queries for smaller screens */
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1300px){
     header{
         grid-template-columns: 25% auto 25%;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    section{
+        grid-template-columns: 30% auto 30%;
+    }
+}
+
+@media screen and (max-width: 750px){
+    section{
+        grid-template-columns: 20% auto 20%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    section{
+        grid-template-columns: 15% auto 15%;
+    }
+    section>p{
+        font-size: 13px;
+    }
+    img{
+        width: 200px;
+        height: 100px;
     }
 }
 
@@ -158,8 +183,12 @@ section>.image_test{
         justify-self: center;
     }
 
-    .bar{
+    .line{
         grid-row-start: 3;
+    }
+
+    section{
+        margin-top: 70px;
     }
 }
 
@@ -169,8 +198,11 @@ section>.image_test{
     }
 }
 
-@media screen and (max-width: 410px){
+@media screen and (max-width: 420px){
     nav{
-        font-size: 12px;
+        font-size: 16px;
+    }
+    header{
+        grid-template-columns: 15% auto 15%;
     }
 }
